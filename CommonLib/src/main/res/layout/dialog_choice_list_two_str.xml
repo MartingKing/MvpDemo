@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip84"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dip30"
+            android:paddingRight="@dimen/dip30"
+            android:text="@string/lib_cancel"
+            android:textColor="@color/tv_red"
+            android:textSize="@dimen/sip34" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip30"
+            android:layout_marginRight="@dimen/dip30"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/tv_black"
+            android:textSize="@dimen/sip34" />
+
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dip30"
+            android:paddingRight="@dimen/dip30"
+            android:text="@string/lib_sure"
+            android:textColor="@color/tv_red"
+            android:textSize="@dimen/sip34" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip1"
+        android:background="@color/colorddd" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip435"
+        android:background="@color/white">
+
+        <com.jinzaofintech.commonlib.view.PickerViewTwoStr
+            android:id="@+id/pickerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lib_picker_min_text2_size="@dimen/sip20"
+            app:lib_picker_min_text_size="@dimen/sip28"
+            app:lib_picker_text2_size="@dimen/sip24"
+            app:lib_picker_text_color="@color/tv_black"
+            app:lib_picker_text_size="@dimen/sip34" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip1"
+                android:background="@color/colorddd" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip1"
+                android:layout_marginTop="@dimen/dip82"
+                android:background="@color/colorddd" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="@dimen/dip540"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llPromptCon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg_common_dialog"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip27"
+            android:text="提示"
+            android:textColor="@color/color333"
+            android:textSize="@dimen/sip36"/>
+
+        <TextView
+            android:id="@+id/tvPrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip44"
+            android:layout_marginRight="@dimen/dip44"
+            android:layout_marginTop="@dimen/dip15"
+            android:lineSpacingMultiplier="1.2"/>
+
+        <View
+            style="@style/line_w_match_h_dip1"
+            android:layout_marginTop="@dimen/dip51"/>
+
+        <TextView
+            android:id="@+id/confirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip104"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/color333"
+            android:textSize="@dimen/sip36"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llAgainCon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bg_common_dialog"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.jinzaofintech.commonlib.view.TextViewIcon
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip66"
+                android:text="&#xe6bb;"
+                android:textColor="#FFD1D1D1"
+                android:textSize="@dimen/dip88"/>
+
+            <TextView
+                android:id="@+id/tvMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dip30"
+                android:layout_marginTop="@dimen/dip16"
+                android:lineSpacingMultiplier="1.2"
+                android:text="查询账户金额失败"
+                android:textColor="@color/color999"
+                android:textSize="@dimen/sip28"/>
+
+            <TextView
+                android:id="@+id/tvAgainBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dip37"
+                android:background="@drawable/dialog_again_btn_bg"
+                android:gravity="center"
+                android:text="重新查询"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <com.jinzaofintech.commonlib.view.TextViewIcon
+            android:id="@+id/tviClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dip94"
+            android:text="&#xe683;"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dip40"/>
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/llmain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <com.jinzaofintech.commonlib.view.ClearableEditText
+            android:id="@+id/tv_oldpwd"
+            style="@style/edt_big_heavy"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/dip26"
+            android:layout_marginLeft="@dimen/dip60"
+            android:layout_marginRight="@dimen/dip60"
+            android:hint="请输入原始密码"
+            android:inputType="textPassword"
+            android:textColorHint="@color/color999"
+            android:textSize="@dimen/sip28" />
+
+        <View style="@style/login_register_diver_style" />
+
+        <EditText
+            android:id="@+id/tv_newpwd"
+            style="@style/edt_big_heavy"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/dip26"
+            android:layout_marginLeft="@dimen/dip60"
+            android:layout_marginRight="@dimen/dip60"
+            android:layout_marginTop="@dimen/dip73"
+            android:hint="请输入新密码"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:textColorHint="@color/color999"
+            android:textSize="@dimen/sip28" />
+
+        <View style="@style/login_register_diver_style" />
+
+        <TextView
+            android:id="@+id/submit"
+            style="@style/normal_roundshape_btn"
+            android:background="@drawable/shape_bg_blue"
+            android:text="@string/make_sure"
+            android:textColor="@color/bt_white" />
+    </LinearLayout>
+
+</RelativeLayout>

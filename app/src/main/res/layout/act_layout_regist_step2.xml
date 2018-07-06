@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/phoneHint"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip100"
+        android:background="@color/window_bg"
+        android:gravity="center"
+        android:textColor="@color/color666"
+        android:textSize="@dimen/sip24"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip60"
+        android:layout_marginRight="@dimen/dip60"
+        android:layout_marginTop="@dimen/dip156"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip100"
+            android:layout_marginTop="@dimen/dip73">
+
+            <com.jinzaofintech.commonlib.view.ClearableEditText
+                android:id="@+id/tv_verifycode"
+                style="@style/edt_big_heavy"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/dip26"
+                android:layout_marginEnd="@dimen/dip190"
+                android:layout_marginRight="@dimen/dip190"
+                android:hint="@string/please_input_verify_code"
+                android:inputType="number"
+                android:maxLength="8"
+                android:textColorHint="@color/color999"
+                android:textSize="@dimen/sip28" />
+
+            <TextView
+                android:id="@+id/tvGetCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shape_bg_round_get_verify_code"
+                android:gravity="center"
+                android:text="@string/get_vfcode"
+                android:textColor="@color/color333"
+                android:textSize="@dimen/sip24" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip1"
+            android:background="@color/colorddd" />
+
+        <TextView
+            android:id="@+id/tv_verfycode_err"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip12"
+            android:text="@string/vfcode_err"
+            android:textColor="@color/colorFF3015"
+            android:textSize="@dimen/sip24"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip100"
+            android:layout_marginTop="@dimen/dip53">
+
+            <EditText
+                android:id="@+id/tv_pwd"
+                style="@style/edt_big_heavy"
+                android:layout_width="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/dip26"
+                android:hint="@string/please_enter_login_pwd"
+                android:inputType="textPassword"
+                android:maxLength="18"
+                android:maxLines="1"
+                android:textColorHint="@color/color999"
+                android:textSize="@dimen/sip28" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip1"
+            android:background="@color/colorddd" />
+
+        <TextView
+            android:id="@+id/tv_pwd_set_err"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip12"
+            android:text="@string/errpwd_try_again"
+            android:textColor="@color/colorFF3015"
+            android:textSize="@dimen/sip24"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip60"
+        android:layout_marginRight="@dimen/dip60"
+        android:layout_marginTop="@dimen/dip60"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="@dimen/dip28"
+            android:layout_height="@dimen/dip28"
+            android:background="@mipmap/icon_close" />
+
+        <TextView
+            android:id="@+id/tv_haveinvite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/have_inviting_friend"
+            android:textColor="@color/color333"
+            android:textSize="@dimen/sip28" />
+    </LinearLayout>
+
+    <com.jinzaofintech.commonlib.view.ClearableEditText
+        android:id="@+id/tv_phone_friend"
+        style="@style/edt_big_heavy"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/dip26"
+        android:layout_marginLeft="@dimen/dip60"
+        android:layout_marginRight="@dimen/dip60"
+        android:layout_marginTop="@dimen/dip30"
+        android:hint="@string/please_enter_phone"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/friend_divider"
+        style="@style/login_register_diver_style"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_makesure"
+        style="@style/normal_roundshape_btn"
+        android:background="@drawable/shape_bg_yello"
+        android:text="@string/make_sure"
+        android:textColor="@color/bt_white" />
+</LinearLayout>

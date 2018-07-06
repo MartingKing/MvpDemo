@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/dip560"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg_common_dialog"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dip40"
+        android:paddingRight="@dimen/dip40">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip60"
+            android:textColor="@color/tv_black"
+            android:textSize="@dimen/sip36" />
+
+        <com.jinzaofintech.commonlib.view.SimpleProgressView
+            android:id="@+id/progressview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip6"
+            android:layout_marginTop="@dimen/dip40"
+            android:background="#F5F5F5"
+            app:lib_progress_color="@color/tv_blue" />
+
+        <TextView
+            android:id="@+id/tv_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dip60"
+            android:layout_marginTop="@dimen/dip10"
+            android:textColor="@color/tv_black"
+            android:textSize="@dimen/sip24" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

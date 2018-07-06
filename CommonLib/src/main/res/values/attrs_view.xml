@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--ProgressView 属性-->
+    <attr name="lib_progress" format="integer" />
+    <attr name="lib_line_color" format="color" />
+    <attr name="lib_line_right_color" format="color"/>
+    <attr name="lib_bg_one_color" format="color" />
+    <attr name="lib_bg_two_color" format="color" />
+    <attr name="lib_text_color" format="color" />
+    <declare-styleable name="ProgressView">
+        <attr name="lib_progress" />
+        <attr name="lib_line_color" />
+        <attr name="lib_line_right_color"/>
+        <attr name="lib_bg_one_color" />
+        <attr name="lib_bg_two_color" />
+        <attr name="lib_text_color" />
+    </declare-styleable>
+
+    <!--SimpleProgressView 属性-->
+    <attr name="lib_progress_color" format="color"/>
+    <declare-styleable name="SimpleProgressView">
+        <attr name="lib_progress_color"/>
+    </declare-styleable>
+
+    <!--PickerView 属性-->
+    <attr name="lib_picker_text_size" format="dimension" />
+    <attr name="lib_picker_min_text_size" format="dimension"/>
+    <attr name="lib_picker_text2_size" format="dimension"/>
+    <attr name="lib_picker_min_text2_size" format="dimension"/>
+    <attr name="lib_picker_text_color" format="color" />
+    <declare-styleable name="PickerView">
+        <attr name="lib_picker_text_size" />
+        <attr name="lib_picker_text_color" />
+        <attr name="lib_picker_text2_size"/>
+        <attr name="lib_picker_min_text2_size"/>
+        <attr name="lib_picker_min_text_size"/>
+    </declare-styleable>
+
+    <!--HomeBannerViewpager-->
+    <attr name="lib_homebannerviewpager_leftright_padding" format="dimension"/>
+    <declare-styleable name="HomeBannerViewpager">
+        <attr name="lib_homebannerviewpager_leftright_padding"/>
+    </declare-styleable>
+
+</resources>

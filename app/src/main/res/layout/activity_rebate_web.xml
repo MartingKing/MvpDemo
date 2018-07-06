@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip88"
+        android:background="@color/colorPrimary"
+        app:contentInsetStart="@dimen/dip0"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextAppearance="@style/Toolbar.TitleText">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.jinzaofintech.commonlib.view.TextViewIcon
+                android:id="@+id/webClose"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dip34"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dip30"
+                android:paddingRight="@dimen/dip10"
+                android:text="&#xe683;"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dip32"/>
+
+            <TextView
+                android:id="@+id/webTitle"
+                android:layout_width="@dimen/dip350"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sip32"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.github.lzyzsd.jsbridge.BridgeWebView
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip3"
+                android:layout_alignParentTop="true"
+                android:progress="0"
+                android:progressDrawable="@drawable/bg_web_process"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llDisposePage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:layout_width="@dimen/dip64"
+                android:layout_height="@dimen/dip64"
+                android:background="@color/white"
+                android:indeterminate="false"
+                android:indeterminateDrawable="@drawable/progress_bar_style"
+                android:indeterminateDuration="1100"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip20"
+                android:text="处理中"
+                android:textColor="@color/color999"
+                android:textSize="@dimen/sip28"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

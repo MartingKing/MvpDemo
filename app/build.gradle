@@ -1,0 +1,81 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'walle'
+apply from: 'tinker-support.gradle'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.jinzaofintech.rebate"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            //设置支持的SO库架构
+            abiFilters 'armeabi', 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+    }
+    signingConfigs {
+        debug {
+            keyAlias 'debug.keystore'
+            keyPassword 'android'
+            storeFile file('debug.keystore')
+            v2SigningEnabled true
+        }
+    }
+    buildTypes {
+        release {
+            manifestPlaceholders = [QQ_AUTH_KEY: "tencent1106602104"]
+            minifyEnabled true
+            shrinkResources true
+            signingConfig signingConfigs.debug
+            buildConfigField("String", "WEB_URL", "\"http://m-fl-qa.jinzaofintech.cn/api/\"")//BaseUrl
+            buildConfigField("boolean", "DEBUG_MODE", "false")//是否debug模式
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            manifestPlaceholders = [QQ_AUTH_KEY: "tencent1106602104"]
+            minifyEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.debug
+            buildConfigField("String", "WEB_URL", "\"http://m-fl-qa.jinzaofintech.cn/api/\"")//BaseUrl
+            buildConfigField("boolean", "DEBUG_MODE", "true")//是否debug模式
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+//多渠道打包https://github.com/Meituan-Dianping/walle
+walle {
+    // 指定渠道包的输出路径
+    apkOutputFolder = new File("${project.buildDir}/outputs/channels")
+    // 定制渠道包的APK的文件名称
+    apkFileNameFormat = '${appName}-${packageName}-${channel}-${buildType}-v${versionName}-${versionCode}-${buildTime}.apk'
+    // 渠道配置文件
+    channelFile = new File("${project.getProjectDir()}/channel")
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation 'com.android.support:appcompat-v7:26.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //tinker 依赖
+    compile 'com.tencent.bugly:crashreport_upgrade:1.3.4'
+    compile 'com.tencent.bugly:nativecrashreport:3.3.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.0'
+    implementation project(':CommonLib')
+    implementation 'com.bigkoo:convenientbanner:2.0.5'
+}

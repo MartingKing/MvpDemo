@@ -1,0 +1,62 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    android {
+        lintOptions {
+            abortOnError false
+        }
+    }
+
+    buildTypes {
+        release {
+            //友盟appkey secret
+            manifestPlaceholders = [LINKEDME_KEY        : "2ebff251fd215b2cc7274e7f60a81e30",//深度链接key
+                                    UMENG_APPKEY        : "5b2868b88f4a9d2aec000023",//友盟appkey
+                                    UMENG_MESSAGE_SECRET: "190a59ebc8906ca6d2ec29642d1cdf95"//友盟secret
+            ]
+            buildConfigField("String", "BASE_URL", "\"http://m-fl-qa.jinzaofintech.cn/api/\"")//BaseUrl
+            buildConfigField("String", "BUGLY_ID", "\"c7631e4db2\"")//bugly
+            buildConfigField("String", "UMENG_APPKEY", "\"5b2868b88f4a9d2aec000023\"")//友盟appkey
+            buildConfigField("String", "UMENG_MESSAGE_SECRET", "\"190a59ebc8906ca6d2ec29642d1cdf95\"")
+            buildConfigField("String", "XIAOMI_KEY", "\"2882303761517598432\"")//小米key
+            buildConfigField("String", "XIAOMI_SECRET", "\"5591759891432\"")
+            buildConfigField("String", "WEIXIN_KEY", "\"wx0cb9a27546ce664f\"")
+            buildConfigField("String", "WEIXIN_SECRET", "\"ab34796d4b113d26358f01fe3ef4b087\"")
+            buildConfigField("String", "QQ_KEY", "\"1106602104\"")
+            buildConfigField("String", "QQ_SECRET", "\"P4CL1PNMfJj42WP9\"")
+            buildConfigField("boolean", "DEBUG_MODE", "false")//是否debug模式
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            //友盟appkey secret
+            manifestPlaceholders = [LINKEDME_KEY: "2ebff251fd215b2cc7274e7f60a81e30",//深度链接key
+                                    UMENG_APPKEY: "5b2869948f4a9d17eb00002e",//友盟appkey
+                                    UMENG_MESSAGE_SECRET: "fef1715ab5ee551263ec675b6dc4347e"//友盟secret
+            ]
+            buildConfigField("String", "BASE_URL", "\"http://m-fl-qa.jinzaofintech.cn/api/\"")
+            buildConfigField("String", "BUGLY_ID", "\"c7631e4db2\"")
+            buildConfigField("String", "UMENG_APPKEY", "\"5b2869948f4a9d17eb00002e\"")//友盟appkey
+            buildConfigField("String", "UMENG_MESSAGE_SECRET", "\"fef1715ab5ee551263ec675b6dc4347e\"")
+            buildConfigField("String", "XIAOMI_KEY", "\"2882303761517598432\"")//小米key
+            buildConfigField("String", "XIAOMI_SECRET", "\"5591759891432\"")
+            buildConfigField("String", "WEIXIN_KEY", "\"wx0cb9a27546ce664f\"")
+            buildConfigField("String", "WEIXIN_SECRET", "\"ab34796d4b113d26358f01fe3ef4b087\"")
+            buildConfigField("String", "QQ_KEY", "\"1106602104\"")
+            buildConfigField("String", "QQ_SECRET", "\"P4CL1PNMfJj42WP9\"")
+            buildConfigField("boolean", "DEBUG_MODE", "true")//是否debug模式
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+

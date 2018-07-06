@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/ll_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/dip156"
+        android:orientation="vertical">
+
+        <com.jinzaofintech.commonlib.view.ClearableEditText
+            android:id="@+id/tv_phone"
+            style="@style/edt_big_heavy"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/dip26"
+            android:layout_marginLeft="@dimen/dip60"
+            android:layout_marginRight="@dimen/dip60"
+            android:hint="@string/please_enter_phone"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:textColorHint="@color/color999"
+            android:textSize="@dimen/sip28" />
+
+        <View style="@style/login_register_diver_style" />
+
+        <TextView
+            android:id="@+id/tv_phone_format_err"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip60"
+            android:layout_marginRight="@dimen/dip60"
+            android:layout_marginTop="@dimen/dip12"
+            android:text="@string/err_phone_number"
+            android:textColor="@color/colorFF3015"
+            android:textSize="@dimen/sip24"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_nextstep"
+            style="@style/normal_roundshape_btn"
+            android:background="@drawable/shape_bg_yello"
+            android:text="@string/next_step"
+            android:textColor="@color/bt_white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_accept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dip60"
+        android:layout_marginTop="@dimen/dip40"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.jinzaofintech.commonlib.view.TextViewIcon
+            android:id="@+id/tv_select_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_selected"
+            android:textColor="@color/colorFEC043"
+            android:textSize="@dimen/sip36" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip25"
+            android:text="@string/read_accept_text"
+            android:textColor="@color/color999"
+            android:textSize="@dimen/sip22" />
+
+        <TextView
+            android:id="@+id/tv_xieyi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/register_agrement"
+            android:textColor="@color/color87A9FF"
+            android:textSize="@dimen/sip22"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tv_tologin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_accept"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dip90"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/dip30">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/aready_have_account"
+            android:textColor="@color/color999"
+            android:textSize="@dimen/sip28" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/go_login_text"
+            android:textColor="@color/color87A9FF"
+            android:textSize="@dimen/sip28" />
+    </LinearLayout>
+</RelativeLayout>

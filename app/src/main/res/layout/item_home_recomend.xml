@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dip40"
+    android:paddingLeft="@dimen/dip32"
+    android:paddingTop="@dimen/dip40">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_platform"
+            android:layout_width="@dimen/dip35"
+            android:layout_height="@dimen/dip35"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/platform_picture" />
+
+        <TextView
+            android:id="@+id/tv_platform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dip12"
+            android:layout_toRightOf="@id/iv_platform"
+            android:textColor="@color/color333"
+            android:textSize="@dimen/sip28" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dip12"
+            android:layout_toRightOf="@id/tv_platform"
+            android:textColor="@color/color999"
+            android:textSize="@dimen/sip22" />
+
+        <com.jinzaofintech.commonlib.view.TextViewIcon
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dip32"
+            android:text="@string/icon_right"
+            android:textColor="@color/color999"
+            android:textSize="@dimen/sip22" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dip12">
+
+        <TextView
+            android:id="@+id/tv_year_profit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color333"
+            android:textSize="@dimen/sip28" />
+
+        <TextView
+            android:id="@+id/tv_firt_invest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorFF703F"
+            android:textSize="@dimen/sip28" />
+
+        <TextView
+            android:id="@+id/tv_second_invest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dip32"
+            android:textColor="@color/colorFF703F"
+            android:textSize="@dimen/sip28" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dip12">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/history_profit"
+            android:textColor="@color/color999"
+            android:textSize="@dimen/sip22" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/first_reward"
+            android:textColor="@color/color999"
+            android:textSize="@dimen/sip22" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dip32"
+            android:text="@string/second_reward"
+            android:textColor="@color/color999"
+            android:textSize="@dimen/sip22" />
+    </RelativeLayout>
+</LinearLayout>

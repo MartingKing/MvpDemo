@@ -1,0 +1,56 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply from: 'android.gradle'
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    compile 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    compile 'com.android.support:design:27.1.1'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+    compile 'com.android.support:multidex:1.0.3'
+    //状态栏
+    compile 'com.githang:status-bar-compat:0.7'
+    //图片加载
+    compile 'com.vclicai:imageloader:1.0.1'
+    //友盟统计
+    compile 'com.umeng.sdk:common:1.5.3'
+    compile 'com.umeng.analytics:analytics:6.1.4'
+    // retrofit2 rxjava okhttp3
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'io.reactivex.rxjava2:rxjava:2.1.1'
+    compile 'com.squareup.retrofit2:adapter-rxjava2:2.2.0'
+    //rxbinding
+    compile 'com.jakewharton.rxbinding2:rxbinding-recyclerview-v7:2.0.0'
+    compile 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
+    //rxpermissions
+    compile 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar'
+    //butterknife
+    compile 'com.jakewharton:butterknife:8.8.1'
+    //BaseRecyclerView适配器
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+    //刷新控件
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.3'
+    //tablayout
+    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    //js交互webview
+    compile 'com.vclicai:JsBridge:1.0.2'
+    //app升级
+    compile 'com.vclicai:UpdateApp:1.1.1'
+    //eventbus
+    compile 'org.greenrobot:eventbus:3.1.1'
+    //多渠道打包https://github.com/Meituan-Dianping/walle
+    compile 'com.meituan.android.walle:library:1.1.6'
+    //LinkedMe深度链接依赖
+    compile 'cc.linkedme.deeplinks:link-page:1.0.16'
+
+}
+repositories {
+    mavenCentral()
+}

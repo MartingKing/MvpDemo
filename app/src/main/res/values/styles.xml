@@ -1,0 +1,136 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppThemeStyle">
+
+    </style>
+
+    <!--全局设置-->
+    <style name="AppThemeStyle" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:windowBackground">@color/window_bg</item>
+        <!--键盘弹出设置滚动 -->
+        <item name="android:windowSoftInputMode">adjustResize|adjustUnspecified|stateAlwaysHidden
+        </item>
+        <item name="android:configChanges">keyboardHidden|orientation|screenSize</item>
+        <!--界面切换黑屏问题-->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:listDivider">@drawable/bg_divider</item>
+    </style>
+
+    <style name="myActionButtonStyle" parent="Widget.AppCompat.ActionButton">
+        <item name="android:paddingLeft">0dip</item>
+        <item name="android:paddingRight">6dip</item>
+        <item name="android:minWidth">36dp</item>
+        <item name="android:minHeight">36dp</item>
+    </style>
+
+    <style name="edt_big">
+        <item name="android:background">@null</item>
+        <item name="android:textSize">@dimen/sip32</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColorHint">@color/tv_hint</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="edt_big_heavy" parent="@style/edt_big">
+        <item name="android:textColor">@color/tv_heavy</item>
+    </style>
+
+
+    <style name="tv_normal">
+        <item name="android:textSize">@dimen/sip28</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="login_register_diver_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dip1</item>
+        <item name="android:layout_marginLeft">@dimen/dip60</item>
+        <item name="android:layout_marginRight">@dimen/dip60</item>
+        <item name="android:background">@color/colorddd</item>
+    </style>
+
+    <style name="normal_roundshape_btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dip88</item>
+        <item name="android:layout_marginLeft">@dimen/dip60</item>
+        <item name="android:layout_marginRight">@dimen/dip60</item>
+        <item name="android:layout_marginTop">@dimen/dip100</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/sip32</item>
+    </style>
+
+    <style name="layout_wrap_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="account_frag_item_layout_style" parent="layout_wrap_style">
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginBottom">@dimen/dip21</item>
+        <item name="android:layout_marginLeft">@dimen/sip44</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="account_frag_item_txt_style" parent="layout_wrap_style">
+        <item name="android:layout_marginLeft">@dimen/dip20</item>
+        <item name="android:textColor">@color/color333</item>
+        <item name="android:textSize">@dimen/sip28</item>
+    </style>
+
+    <style name="account_frag_txt_style" parent="layout_wrap_style">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">@dimen/dip10</item>
+        <item name="android:textSize">@dimen/sip24</item>
+    </style>
+
+    <style name="account_frag_item_iconright_style" parent="layout_wrap_style">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">@dimen/dip40</item>
+        <item name="android:text">@string/icon_right</item>
+        <item name="android:textColor">@color/color999</item>
+        <item name="android:textSize">@dimen/sip28</item>
+    </style>
+
+    <style name="account_frag_divider_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dip1</item>
+        <item name="android:layout_marginLeft">@dimen/dip103</item>
+        <item name="android:background">@color/colorEDEDED</item>
+    </style>
+
+    <!--横向LinearLayout 左右间距 dip40 高度 dip100 竖直居中-->
+    <style name="layout_setting_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dip100</item>
+        <item name="android:layout_marginLeft">@dimen/dip40</item>
+        <item name="android:layout_marginRight">@dimen/dip40</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="dialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!--边框-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item>
+        <!--半透明-->
+        <item name="android:windowNoTitle">true</item>
+        <!--无标题-->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!--背景透明-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--模糊-->
+    </style>
+</resources>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip84"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dip40"
+        android:paddingRight="@dimen/dip40"
+        android:text="@string/widthdraw_to"
+        android:textColor="@color/color999"
+        android:textSize="@dimen/sip28" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip140"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dip40"
+        android:paddingRight="@dimen/dip40">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/v_zhifubao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_zhifubao" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dip12"
+            android:layout_toRightOf="@id/v_zhifubao"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支付宝"
+                android:textColor="@color/color333"
+                android:textSize="@dimen/sip32" />
+
+            <TextView
+                android:id="@+id/tv_account_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color333"
+                android:textSize="@dimen/sip28" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_change_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/dip30"
+            android:background="@drawable/blue_shape_round_bg_no_solid"
+            android:paddingBottom="@dimen/dip5"
+            android:paddingLeft="@dimen/dip26"
+            android:paddingRight="@dimen/dip26"
+            android:paddingTop="@dimen/dip5"
+            android:text="@string/text_change"
+            android:textColor="@color/color369FF7" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dip19"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip200"
+            android:paddingLeft="@dimen/dip60"
+            android:paddingRight="@dimen/dip60">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_money" />
+
+            <EditText
+                android:id="@+id/tv_widthdrwa_money"
+                style="@style/edt_big_heavy"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/dip26"
+                android:layout_marginLeft="@dimen/dip22"
+                android:layout_marginRight="@dimen/dip22"
+                android:layout_marginTop="@dimen/dip73"
+                android:layout_toRightOf="@id/iv_money"
+                android:hint="@string/widthdraw_hint"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColorHint="@color/color999"
+                android:textSize="@dimen/sip28" />
+
+        </RelativeLayout>
+
+        <View style="@style/login_register_diver_style" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dip22"
+            android:layout_marginTop="@dimen/dip22"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dip60"
+            android:paddingRight="@dimen/dip60">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account_rest"
+                android:textColor="@color/color999"
+                android:textSize="@dimen/sip28" />
+
+            <TextView
+                android:id="@+id/tv_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/sip28" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/unit_yuan"
+                android:textColor="@color/color999"
+                android:textSize="@dimen/sip28" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvLoiginBtn"
+        style="@style/normal_roundshape_btn"
+        android:background="@drawable/shape_bg_blue"
+        android:text="@string/submit"
+        android:textColor="@color/bt_white" />
+
+
+</LinearLayout>

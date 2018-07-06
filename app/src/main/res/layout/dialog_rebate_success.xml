@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="@dimen/dip540"
+              android:layout_height="wrap_content"
+              android:background="@mipmap/rebate_success"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip61"
+        android:layout_marginRight="@dimen/dip61"
+        android:layout_marginTop="@dimen/dip232"
+        android:lineSpacingMultiplier="1.2"
+        android:text="哇，您在团贷网的资产总额为666元，5元返现金额已放入您的7+1账户，请注意查收。"
+        android:textColor="@color/color999"/>
+
+    <TextView
+        android:id="@+id/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dip80"
+        android:background="@drawable/shape_bt_orange"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dip32"/>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

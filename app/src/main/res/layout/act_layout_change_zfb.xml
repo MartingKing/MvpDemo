@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/llmain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dip20"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dip40"
+        android:paddingRight="@dimen/dip40">
+
+        <com.jinzaofintech.commonlib.view.ClearableEditText
+            android:id="@+id/edtAccount"
+            style="@style/edt_big_heavy"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip100"
+            android:layout_marginBottom="@dimen/dip26"
+            android:hint="请输入新的支付宝账户"
+            android:maxLines="1"
+            android:textColorHint="@color/color999"
+            android:textSize="@dimen/sip28" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip1"
+            android:background="@color/colorddd" />
+
+        <EditText
+            android:id="@+id/edtPwd"
+            style="@style/edt_big_heavy"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip100"
+            android:layout_marginBottom="@dimen/dip26"
+            android:hint="请输入新的支付宝实名"
+            android:maxLines="1"
+            android:textColorHint="@color/color999"
+            android:textSize="@dimen/sip28" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip1"
+        android:background="@color/colorddd" />
+
+    <TextView
+        android:id="@+id/tvLoiginBtn"
+        style="@style/normal_roundshape_btn"
+        android:background="@drawable/shape_bg_gray"
+        android:text="@string/submit"
+        android:textColor="@color/bt_white" />
+</LinearLayout>

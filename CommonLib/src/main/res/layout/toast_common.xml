@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dip240"
+    android:layout_height="@dimen/dip240"
+    android:layout_gravity="center">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="@dimen/dip240"
+        android:layout_height="@dimen/dip240"
+        android:background="@drawable/shape_bg_common_toast"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.jinzaofintech.commonlib.view.TextViewIcon
+            android:id="@+id/tvi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tv_white"
+            android:textSize="@dimen/sip60" />
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip20"
+            android:layout_marginRight="@dimen/dip20"
+            android:layout_marginTop="@dimen/dip30"
+            android:gravity="center"
+            android:textColor="@color/tv_white"
+            android:textSize="@dimen/sip26" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

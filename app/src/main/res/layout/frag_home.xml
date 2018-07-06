@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip88">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dip16"
+                    app:srcCompat="@drawable/ic_7_1" />
+
+                <LinearLayout
+                    android:id="@+id/ll_withdraw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dip16"
+                    android:background="@drawable/shape_round_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/dip3"
+                    android:paddingTop="@dimen/dip3">
+
+                    <TextView
+                        android:id="@+id/tv_restamount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dip15"
+                        android:text="￥5000"
+                        android:textColor="@color/color666"
+                        android:textSize="@dimen/sip26" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dip2"
+                        android:layout_marginLeft="@dimen/dip5"
+                        android:layout_marginRight="@dimen/dip5"
+                        android:text="|"
+                        android:textColor="@color/colorFF703F" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dip15"
+                        android:text="提现"
+                        android:textColor="@color/colorFF703F"
+                        android:textSize="@dimen/sip26" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <com.bigkoo.convenientbanner.ConvenientBanner
+                android:id="@+id/convenient_banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip260"
+                app:canLoop="true" />
+
+            <include layout="@layout/item_home_abs" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dip30"
+                android:orientation="horizontal">
+
+                <com.jinzaofintech.commonlib.view.TextViewIcon
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/icon_hot"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sip28" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dip12"
+                    android:text="@string/today_hot"
+                    android:textColor="@color/color333"
+                    android:textSize="@dimen/sip24" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_hot"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip190"
+                android:layout_marginLeft="@dimen/dip12"
+                android:layout_marginRight="@dimen/dip12"
+                android:layout_marginTop="@dimen/dip30">
+
+                <ImageView
+                    android:id="@+id/iv_hot"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/bg_hot" />
+
+                <TextView
+                    android:id="@+id/iv_vivid_left"
+                    android:layout_width="@dimen/dip25"
+                    android:layout_height="@dimen/dip25"
+                    android:layout_marginLeft="@dimen/dip40"
+                    android:layout_marginStart="@dimen/dip40"
+                    android:layout_marginTop="@dimen/dip110"
+                    android:background="@mipmap/ic_vivid_left" />
+
+                <TextView
+                    android:id="@+id/iv_feedback"
+                    android:layout_width="@dimen/dip110"
+                    android:layout_height="@dimen/dip110"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dip65"
+                    android:layout_marginRight="@dimen/dip65"
+                    android:background="@mipmap/ic_vivid_feedback" />
+
+                <TextView
+                    android:id="@+id/iv_vivid_right"
+                    android:layout_width="@dimen/dip20"
+                    android:layout_height="@dimen/dip20"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="@dimen/dip48"
+                    android:layout_marginRight="@dimen/dip48"
+                    android:layout_marginTop="@dimen/dip30"
+                    android:background="@mipmap/ic_vivid_right" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dip30"
+                android:orientation="horizontal">
+
+                <com.jinzaofintech.commonlib.view.TextViewIcon
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/icon_recomend"
+                    android:textColor="@color/colorFFA52F"
+                    android:textSize="@dimen/sip28" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dip12"
+                    android:text="@string/recomend_pro"
+                    android:textColor="@color/color333"
+                    android:textSize="@dimen/sip24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dip12"
+                    android:text="@string/invest_feedback"
+                    android:textColor="@color/color999"
+                    android:textSize="@dimen/sip24" />
+            </LinearLayout>
+
+            <include layout="@layout/layout_recyclerview" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip20"
+                android:layout_marginTop="@dimen/dip50"
+                android:background="@color/colorF5F5F5" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip66"
+                android:layout_marginTop="@dimen/dip15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dip32"
+                    android:layout_marginStart="@dimen/dip32"
+                    android:text="返现流程"
+                    android:textColor="@color/color666"
+                    android:textSize="@dimen/sip24" />
+
+
+                <com.jinzaofintech.commonlib.view.TextViewIcon
+                    android:id="@+id/tv_icon_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dip30"
+                    android:layout_marginRight="@dimen/dip30"
+                    android:text="@string/icon_right"
+                    android:textColor="@color/color999"
+                    android:textSize="@dimen/sip24" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dip10"
+                    android:layout_toLeftOf="@id/tv_icon_right"
+                    android:text="返利攻略"
+                    android:textColor="@color/color999"
+                    android:textSize="@dimen/sip24" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip2"
+                android:background="@color/colorF5F5F5" />
+
+            <include layout="@layout/item_home_bottom" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">InvestCommonLib</string>
+    <string name="lib_cancel">取消</string>
+    <string name="lib_finish">完成</string>
+    <string name="lib_quota_explain">限额说明</string>
+    <string name="lib_special_attention">特别注意：</string>
+    <string name="lib_quota_msg1">1.如您有任何疑问，均可添加客服微信，24小时为您服务。客服微信：</string>
+    <string name="lib_quota_msg2">2.维C物权对接新浪支付托管系统，目前新浪支付仅支持</string>
+    <string name="lib_quota_msg3">家银行手机支付，具体情况如下：</string>
+    <string name="lib_title">标题</string>
+    <string name="lib_please_input">请输入</string>
+    <string name="lib_sure">确定</string>
+    <string name="lib_refresh_loadmore_nomore">-- 没有更多数据 --</string>
+    <string name="lib_refresh_loadmore_error">出错了，请点击重新加载更多</string>
+    <string name="lib_refresh_loadmore_loading">努力加载中...</string>
+    <string name="refresh_pulldown_refresh">下拉刷新</string>
+    <string name="login_success">com_weiclicai_app_login_success</string>
+    <string name="back_icon">&#xe67f;</string>
+</resources>

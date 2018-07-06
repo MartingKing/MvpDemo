@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jinzaofintech.rebate">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <application
+        android:name=".app.RebateApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.activity.WebViewActivity"
+            android:label="webView" />
+        <activity
+            android:name=".ui.activity.RebateWebViewActivity"
+            android:label="第三方平台WebView" />
+
+        <!-- *****************************************分享配置开始***************************** -->
+
+        <!--qq精简版：-->
+        <activity
+            android:name="com.umeng.qq.tencent.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- APP ID：1106298406-->
+                <data android:scheme="${QQ_AUTH_KEY}" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.jinzaofintech.rebate.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name="com.umeng.qq.tencent.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--************************ LinkedMe 配置开始 ************************-->
+        <!-- URI Scheme方式 在dashboard配置中,请保持与ios的URI Scheme相同 -->
+        <!--
+        如果程序已存在与此完全相同的data配置,即只包含scheme并且值完全相同,
+        则需要考虑发起的intent会出现相同应用图标的选择对话框的情况
+        参考集成文档:https://www.linkedme.cc/docs/page4.html#link1
+        -->
+        <intent-filter>
+            <!-- 此处scheme值需要替换为后台设置中的scheme值 -->
+            <!-- host禁止更改！！！ -->
+            <!-- 禁止配置其他属性 -->
+            <data
+                android:host="linkedme"
+                android:scheme="weic" />
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+        </intent-filter>
+
+        <!-- APP Links方式,Android 23版本及以后支持 -->
+        <intent-filter android:autoVerify="true">
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <!-- 以下pathPrefix值需要替换为后台设置中 App ID 的值-->
+            <!-- host中设置的lkme.cc不要更改！！！-->
+            <data
+                android:host="lkme.cc"
+                android:pathPrefix="/G2D"
+                android:scheme="https" />
+            <data
+                android:host="lkme.cc"
+                android:pathPrefix="/G2D"
+                android:scheme="http" />
+        </intent-filter>
+
+        <!--************************ LinkedMe 配置结束 ************************-->
+        <activity
+            android:name=".ui.activity.AboutusActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.FundermenterDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.MyMsgCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.RewardInvatationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.WidthdrawActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ChangeZFBAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ChangePhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SetNewPhoneCanReceiveCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SetNewPhoneCantReceiveCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ChangePWDActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.Register2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.RegistSuccessActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.activity.ForgetPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.MyMessageActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

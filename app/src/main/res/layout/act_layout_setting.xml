@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_zhifubao"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip112"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dip20">
+
+        <TextView
+            android:id="@+id/tv_alititle"
+            style="@style/account_frag_item_txt_style"
+            android:layout_centerVertical="true"
+            android:text="支付宝" />
+
+        <com.jinzaofintech.commonlib.view.TextViewIcon
+            android:id="@+id/tv_icon_right"
+            style="@style/account_frag_item_iconright_style" />
+
+        <TextView
+            android:id="@+id/tv_tobind"
+            style="@style/account_frag_txt_style"
+            android:layout_toLeftOf="@id/tv_icon_right"
+            android:layout_toStartOf="@id/tv_icon_right"
+            android:textSize="@dimen/sip24" />
+
+        <TextView
+            android:id="@+id/tv_ali_account"
+            style="@style/account_frag_txt_style"
+            android:layout_marginLeft="@dimen/dip20"
+            android:layout_marginStart="@dimen/dip20"
+            android:layout_toEndOf="@id/tv_alititle"
+            android:layout_toRightOf="@id/tv_alititle"
+            android:textColor="@color/color999"
+            android:textSize="@dimen/sip24" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip2"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dip20"
+            android:background="@color/colorEDEDED" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip112"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dip20">
+
+        <TextView
+            android:id="@+id/tv_p"
+            style="@style/account_frag_item_txt_style"
+            android:layout_centerVertical="true"
+            android:text="手机号" />
+
+        <TextView
+            android:id="@+id/tv_phone_num"
+            style="@style/account_frag_txt_style"
+            android:layout_marginLeft="@dimen/dip20"
+            android:layout_toRightOf="@id/tv_p"
+            android:text="18812345678"
+            android:textColor="@color/color999"
+            android:textSize="@dimen/sip24" />
+
+        <com.jinzaofintech.commonlib.view.TextViewIcon
+            android:id="@+id/tv_icon_right1"
+            style="@style/account_frag_item_iconright_style" />
+
+        <TextView
+            android:id="@+id/tv_tochange"
+            style="@style/account_frag_txt_style"
+            android:layout_toLeftOf="@id/tv_icon_right1"
+            android:layout_toStartOf="@id/tv_icon_right1"
+            android:text="修改"
+            android:textColor="@color/color999"
+            android:textSize="@dimen/sip24" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip2"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dip20"
+            android:background="@color/colorEDEDED" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip112"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dip20">
+
+        <TextView
+            style="@style/account_frag_item_txt_style"
+            android:layout_centerVertical="true"
+            android:text="@string/login_text" />
+
+        <com.jinzaofintech.commonlib.view.TextViewIcon
+            android:id="@+id/tv_icon_right2"
+            style="@style/account_frag_item_iconright_style" />
+
+        <TextView
+            style="@style/account_frag_txt_style"
+            android:layout_toLeftOf="@id/tv_icon_right2"
+            android:layout_toStartOf="@id/tv_icon_right2"
+            android:text="修改"
+            android:textColor="@color/color999"
+            android:textSize="@dimen/sip24" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvLogout"
+        style="@style/normal_roundshape_btn"
+        android:layout_marginTop="@dimen/dip190"
+        android:background="@drawable/shape_bg_yello"
+        android:text="@string/loging_out"
+        android:textColor="@color/bt_white" />
+</LinearLayout>

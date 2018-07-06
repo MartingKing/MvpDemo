@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/llmain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <com.jinzaofintech.commonlib.view.ClearableEditText
+            android:id="@+id/edtAccount"
+            style="@style/edt_big_heavy"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/dip26"
+            android:layout_marginLeft="@dimen/dip60"
+            android:layout_marginRight="@dimen/dip60"
+            android:hint="@string/please_enter_phone"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:textColorHint="@color/color999"
+            android:textSize="@dimen/sip28" />
+
+        <View style="@style/login_register_diver_style" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip60"
+            android:layout_marginRight="@dimen/dip60">
+
+            <EditText
+                android:id="@+id/edtPwd"
+                style="@style/edt_big_heavy"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/dip26"
+                android:layout_marginTop="@dimen/dip73"
+                android:hint="@string/please_enter_login_pwd"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColorHint="@color/color999"
+                android:textSize="@dimen/sip28" />
+
+            <com.jinzaofintech.commonlib.view.TextViewIcon
+                android:id="@+id/icEye"
+                style="@style/tv_normal"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/dip80"
+                android:paddingLeft="@dimen/dip20"
+                android:text="@string/pwd_visiable"
+                android:textColor="@color/color999"
+                android:textSize="@dimen/dip23" />
+        </RelativeLayout>
+
+        <View style="@style/login_register_diver_style" />
+
+        <TextView
+            android:id="@+id/tvLoiginBtn"
+            style="@style/normal_roundshape_btn"
+            android:background="@drawable/shape_bg_yello"
+            android:text="@string/login_now"
+            android:textColor="@color/bt_white" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvForgetPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/llmain"
+        android:layout_marginRight="@dimen/dip83"
+        android:layout_marginTop="@dimen/dip10"
+        android:padding="@dimen/dip33"
+        android:text="@string/forget_pwd"
+        android:textColor="@color/color333"
+        android:textSize="@dimen/sip28" />
+
+    <TextView
+        android:id="@+id/tvRegisterBtn"
+        style="@style/tv_normal"
+        android:layout_below="@id/tvForgetPwd"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dip90"
+        android:padding="@dimen/dip32"
+        android:text="@string/go_to_register"
+        android:textColor="@color/color7AA0FF" />
+</RelativeLayout>

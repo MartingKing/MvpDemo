@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">7+1返利</string>
+    <string name="home_page">首页</string>
+    <string name="account_page">我的</string>
+
+    <string name="icon_right">&#xe69e;</string>
+    <string name="icon_left">&#xe6a5;</string>
+    <string name="icon_feedback">&#xe69d;</string>
+    <string name="icon_￥">&#xe69c;</string>
+    <string name="icon_recomend">&#xe69a;</string>
+    <string name="icon_hot">&#xe699;</string>
+    <string name="pwd_visiable">&#xe629;</string>
+    <string name="pwd_invisiable">&#xe628;</string>
+    <string name="icon_selected">&#xe6af;</string>
+    <string name="status_unselect">&#xe65b;</string>
+    <string name="fundation_detail">&#xe6a6;</string>
+    <string name="reward_invatation">&#xe6a7;</string>
+    <string name="my_invatation">&#xe6a9;</string>
+    <string name="icon_setting">&#xe6a8;</string>
+    <string name="icon_abount_us">&#xe6aa;</string>
+    <string name="icon_msg">&#xe6a9;</string>
+    <string name="icon_pointer">&#xe609;</string>
+
+    <string name="icon_broadcast">&#xe612;</string>
+    <string name="today_hot">今日爆品</string>
+    <string name="recomend_pro">精品推荐</string>
+    <string name="invest_feedback">投资返利</string>
+
+    <string name="please_enter_phone">请输入手机号码</string>
+    <string name="please_enter_login_pwd">请输入登录密码</string>
+    <string name="login_now">立即登录</string>
+    <string name="forget_pwd">忘记密码</string>
+    <string name="go_to_register">去注册</string>
+    <string name="please_input_verify_code">请输入验证码</string>
+    <string name="make_sure">确认</string>
+    <string name="next_step">下一步</string>
+    <string name="have_inviting_friend">我有好友邀请</string>
+    <string name="get_vfcode">获取验证码</string>
+    <string name="vfcode_err">验证码错误</string>
+    <string name="errpwd_try_again">登录密码设置错误，请重新设置。</string>
+    <string name="err_phone_number">手机号格式输入不正确</string>
+    <string name="read_accept_text">已阅读并同意</string>
+    <string name="register_agrement">《注册协议》</string>
+    <string name="aready_have_account">已有账户？</string>
+    <string name="go_login_text">去登录</string>
+    <string name="regist_succ_tips">终于等到你</string>
+    <string name="unit_yuan">元</string>
+    <string name="rewart_tips">注册奖励已发放至您的账户，请查收！</string>
+    <string name="set_new_pwd">请设置新登录密码</string>
+    <string name="no_less_than_6size_pwd">请设置长度不小于6的新密码</string>
+    <string name="platform_picture">platform_picture</string>
+    <string name="history_profit">历史年化收益率</string>
+    <string name="first_reward">首投奖励</string>
+    <string name="second_reward">复投奖励</string>
+    <string name="widthdraw_to">提现到:</string>
+    <string name="text_change">修改</string>
+    <string name="widthdraw_hint">请输入提现金额，一元起提</string>
+    <string name="account_rest">账户余额：</string>
+    <string name="submit">提交</string>
+    <string name="ali_account_hint">请输入支付宝账户</string>
+    <string name="ali_realname_hint">请输入支付宝实名</string>
+    <string name="loging_out">退出登录</string>
+    <string name="login_text">登录</string>
+
+
+</resources>

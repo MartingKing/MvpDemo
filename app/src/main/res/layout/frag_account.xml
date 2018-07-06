@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip300"
+        android:background="@drawable/bg_gradient_account"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip80"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sip32" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip32"
+            android:layout_marginRight="@dimen/dip32"
+            android:layout_marginTop="@dimen/dip56">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的资产(元)"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sip24" />
+
+            <TextView
+                android:id="@+id/tv_widthdrwa_aready"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sip24" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip32"
+            android:layout_marginRight="@dimen/dip32"
+            android:layout_marginTop="@dimen/dip22">
+
+            <TextView
+                android:id="@+id/my_assets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sip48" />
+
+            <TextView
+                android:id="@+id/tv_widthdrwa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/white_shape_round_bg_no_solid"
+                android:paddingBottom="@dimen/dip6"
+                android:paddingLeft="@dimen/dip32"
+                android:paddingRight="@dimen/dip32"
+                android:paddingTop="@dimen/dip6"
+                android:text="提现"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sip28" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_fundation_detail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip112"
+        android:background="@color/white">
+
+        <LinearLayout style="@style/account_frag_item_layout_style">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_fundation" />
+
+            <TextView
+                style="@style/account_frag_item_txt_style"
+                android:text="资金明细" />
+        </LinearLayout>
+
+
+        <com.jinzaofintech.commonlib.view.TextViewIcon
+            android:id="@+id/tv_icon_right"
+            style="@style/account_frag_item_iconright_style" />
+
+        <TextView
+            android:id="@+id/tv_fundation_detail"
+            style="@style/account_frag_txt_style"
+            android:layout_toLeftOf="@id/tv_icon_right"
+            android:layout_toStartOf="@id/tv_icon_right"
+            android:textColor="@color/color999"
+            android:textSize="@dimen/sip24" />
+
+        <View
+            style="@style/account_frag_divider_style"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_reward_invatation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip112"
+        android:background="@color/white">
+
+        <LinearLayout style="@style/account_frag_item_layout_style">
+
+            <com.jinzaofintech.commonlib.view.TextViewIcon
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reward_invatation"
+                android:textColor="@color/colorFDB31F"
+                android:textSize="@dimen/sip48" />
+
+            <TextView
+                style="@style/account_frag_item_txt_style"
+                android:text="有奖邀请" />
+        </LinearLayout>
+
+
+        <com.jinzaofintech.commonlib.view.TextViewIcon
+            android:id="@+id/tv_icon_right1"
+            style="@style/account_frag_item_iconright_style" />
+
+        <TextView
+            android:id="@+id/tv_reward_invatation"
+            style="@style/account_frag_txt_style"
+            android:layout_toLeftOf="@id/tv_icon_right1"
+            android:layout_toStartOf="@id/tv_icon_right1"
+            android:textColor="@color/color999"
+            android:textSize="@dimen/sip24" />
+
+        <View
+            style="@style/account_frag_divider_style"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_my_msg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip112"
+        android:background="@color/white">
+
+        <LinearLayout style="@style/account_frag_item_layout_style">
+
+            <com.jinzaofintech.commonlib.view.TextViewIcon
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/icon_msg"
+                android:textColor="@color/colorFDB31F"
+                android:textSize="@dimen/sip48" />
+
+            <TextView
+                style="@style/account_frag_item_txt_style"
+                android:text="我的消息" />
+        </LinearLayout>
+
+
+        <com.jinzaofintech.commonlib.view.TextViewIcon
+            android:id="@+id/tv_icon_right2"
+            style="@style/account_frag_item_iconright_style" />
+
+        <TextView
+            android:id="@+id/tv_msg"
+            style="@style/account_frag_txt_style"
+            android:layout_toLeftOf="@id/tv_icon_right2"
+            android:layout_toStartOf="@id/tv_icon_right2"
+            android:textColor="@color/colorFF703F"
+            android:textSize="@dimen/sip24" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip19"
+        android:background="@color/window_bg" />
+
+    <RelativeLayout
+        android:id="@+id/rl_set"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip112"
+        android:background="@color/white">
+
+        <LinearLayout style="@style/account_frag_item_layout_style">
+
+            <com.jinzaofintech.commonlib.view.TextViewIcon
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/icon_setting"
+                android:textColor="@color/colorFDB31F"
+                android:textSize="@dimen/sip48" />
+
+            <TextView
+                style="@style/account_frag_item_txt_style"
+                android:text="设置" />
+        </LinearLayout>
+
+
+        <com.jinzaofintech.commonlib.view.TextViewIcon
+            android:id="@+id/tv_icon_right3"
+            style="@style/account_frag_item_iconright_style" />
+
+        <TextView
+            android:id="@+id/tv_set"
+            style="@style/account_frag_txt_style"
+            android:layout_toLeftOf="@id/tv_icon_right3"
+            android:layout_toStartOf="@id/tv_icon_right3"
+            android:textColor="@color/color999"
+            android:textSize="@dimen/sip24" />
+
+        <View
+            style="@style/account_frag_divider_style"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_abount_us"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip112"
+        android:background="@color/white">
+
+        <LinearLayout style="@style/account_frag_item_layout_style">
+
+            <com.jinzaofintech.commonlib.view.TextViewIcon
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/icon_abount_us"
+                android:textColor="@color/colorFDB31F"
+                android:textSize="@dimen/sip48" />
+
+            <TextView
+                style="@style/account_frag_item_txt_style"
+                android:text="关于我们" />
+        </LinearLayout>
+
+
+        <com.jinzaofintech.commonlib.view.TextViewIcon
+            android:id="@+id/tv_icon_right4"
+            style="@style/account_frag_item_iconright_style" />
+
+        <TextView
+            android:id="@+id/tv_abount_us"
+            style="@style/account_frag_txt_style"
+            android:layout_toLeftOf="@id/tv_icon_right4"
+            android:layout_toStartOf="@id/tv_icon_right4"
+            android:textColor="@color/color999"
+            android:textSize="@dimen/sip24" />
+    </RelativeLayout>
+
+</LinearLayout>
